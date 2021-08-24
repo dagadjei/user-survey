@@ -6,9 +6,38 @@
         <h1 id="title">MyLife Survey</h1>
         <p id="description">A little questionnaire for today!</p>
         <form id="survey-form" action="">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
+            <label for="name-label">Name</label><br>
+            <input type="text" name="name-label" id="name-label" placeholder="enter your name"><br>
+            <label for="email-label">Email</label><br>
+            <input type="email" id="email-label" placeholder="enter valid email"><br>
+            <label for="number-label">Phone Number</label><br>
+            <input type="number-label" id="number-label" placeholder="nine-digit phone number" min="4" max="9">
+        
+            <div><br>
+            <label for="dropdown">Select an Occupation</label>
+            <select name="dropdown" id="dropdown">
+                <option value="web-dev">Web Developer</option>
+                <option value="data-scientist">Data Science</option>
+                <option value="machine-learning">Machine Learning Engineer</option>
+                <option value="tester">Testing and Devops Engineer</option>
+            </select>
+            </div>
             
+            <p> What Salary do you earn?</p>
+            
+            <label><input type="radio" value="40k" name="salary">$40K</label><br>
+            <label><input type="radio" value="80k" name="salary">$80K</label><br>
+            <label><input type="radio" value="120k+" name="salary">120k+</label><br>
+
+            <p>Why do you want to change career?</p>
+            <label><input type="checkbox" value="better-life" name="reason">A beeter Life</label><br>
+            <label><input type="checkbox" value="excite" name="reason">Looks Exciting</label><br>
+            <label><input type="checkbox" value="money" name="reason">Money</label><br>
+            <label><input type="checkbox" value="programmer" name="reason">Programmer Status</label><br>
+
+            <p>Additional Comments</p>
+            <label for="textarea"><textarea name="textarea" id="textarea" cols="30" rows="10"></textarea></label>
+
         </form>
 
     </body>
